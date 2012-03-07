@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/Bacon.js"></script>
+	<script type="text/javascript" src="lib/vector.js"></script>
+	<script type="text/javascript" src="lib/prettify.js"></script>
+  <script type="text/javascript" src="presentation.js"></script>
+  <script type="text/javascript" src="4.js"></script>
+  <script type="text/javascript" src="keystate.js"></script>
+  <script type="text/javascript">
+    $(function() { 
+        initPresentation(4); 
+        $("#show-vector-js").click(function() { showSrc("lib/vector.js")}) 
+    })
+  </script>
+  <link href="bacon.css" rel="stylesheet" type="text/css"/>
+  <link href="prettify.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="content">
+  <h1>Vector arithmetics</h1>
+  <ul>
+    <li>Replace strings with 2D vectors</li>
+    <li>Use <code>map()</code> to get the <code>head</code> from the list of active directions</li>
+    <li>Use scan() to create the position stream</li>
+    <li>A <a href="#" id="show-vector-js">vector.js</a> library provides 2D vector calculations</li>
+  </ul>
+  </div>
+  <div id="demo">
+  <label>Player position:</label><span id="position"></span>	
+  </div>
+  <div id="src"><pre class="prettyprint"/></div>
+</body>
+</html><html>
+
+
+

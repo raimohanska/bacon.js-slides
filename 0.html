@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/Bacon.js"></script>
+	<script type="text/javascript" src="lib/prettify.js"></script>
+  <script type="text/javascript" src="presentation.js"></script>
+  <script type="text/javascript" src="keystate.js"></script>
+  <script type="text/javascript" src="0.js"></script>
+  <script type="text/javascript">
+    $(function() { initPresentation(0) })
+  </script>
+  <link href="bacon.css" rel="stylesheet" type="text/css"/>
+  <link href="prettify.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="content">
+    <h1>JQuery, filter, onValue</h1>
+    <ul>
+      <li>Bacon.js adds the asEventStream() method to jQuery</li>
+      <li>filter() is used to select only those events with keycode=32 (SPACE)</li>
+      <li>onValue() is used to show an alert for each press on the space bar</li>
+    </ul>
+    <p>Press SPACE!</p>
+  </div>
+  <div id="src"><pre class="prettyprint"></pre></div>
+</body>
+</html>

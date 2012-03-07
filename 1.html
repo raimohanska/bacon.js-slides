@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/Bacon.js"></script>
+	<script type="text/javascript" src="lib/prettify.js"></script>
+  <script type="text/javascript" src="presentation.js"></script>
+  <script type="text/javascript" src="keystate.js"></script>
+  <script type="text/javascript" src="1.js"></script>
+  <script type="text/javascript">
+    $(function() { initPresentation(1) })
+  </script>
+  <link href="prettify.css" rel="stylesheet" type="text/css"/>
+  <link href="bacon.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="content">
+  <h1>merge(), map(), toProperty()</h1>
+  <ul>
+    <li>Map key-downs to <code>true</code></li>
+    <li>Merge in the key-ups, mapped to <code>false</code></li>    
+    <li>Make this a stateful property, stating with the
+    <code>false</code> state</li>
+  </ul>
+  </div>
+  <div id="demo">
+    <h2>Live demo</h2>
+    <label>Spacebar down=</label><span id="keyState"></span>	
+  </div>
+  <div id="src"><pre class="prettyprint"/></div>
+</body>
+</html><html>

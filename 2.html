@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/Bacon.js"></script>
+	<script type="text/javascript" src="lib/prettify.js"></script>
+  <script type="text/javascript" src="presentation.js"></script>
+  <script type="text/javascript" src="keystate.js"></script>
+  <script type="text/javascript" src="2.js"></script>
+  <script type="text/javascript">
+    $(function() { initPresentation(2) })
+  </script>
+  <link href="bacon.css" rel="stylesheet" type="text/css"/>
+  <link href="prettify.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="content">
+    <h1>Property.combine()</h1>
+    <ul>
+      <li>Key state stream for each arrow key will produce for instance ['LEFT'] when key is down and [] otherwise
+      <li>Property.combine() is used to combine a key state stream with the next one</li>
+      <li>The concat function is used to collect the state of all arrow keys into a single array</li>
+    </ul>
+  </div>
+  <div id="demo">
+    <label>Keys down=</label><span id="keyState"></span>	
+  </div>
+  <div id="src"><pre class="prettyprint"/></div>
+</body>
+</html><html>
+
+

@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/Bacon.js"></script>
+	<script type="text/javascript" src="lib/raphael.js"></script>
+	<script type="text/javascript" src="lib/vector.js"></script>
+	<script type="text/javascript" src="lib/prettify.js"></script>
+  <script type="text/javascript" src="presentation.js"></script>
+  <script type="text/javascript" src="5.js"></script>
+  <script type="text/javascript" src="keystate.js"></script>
+  <script type="text/javascript" src="gamecontrol.js"></script>
+  <script type="text/javascript">
+    $(function() { 
+        initPresentation(5); 
+        $("#show-js").click(function() { showSrc("gamecontrol.js")}) 
+    })
+  </script>
+  <link href="bacon.css" rel="stylesheet" type="text/css"/>
+  <link href="prettify.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="content">
+  <h1>Side-effects</h1>
+  <ul>
+    <li>Extracted control logic into GameController object in <a href="#" id="show-js">gamecontrol.js</a></li>
+    <li>Use raphael.js to create a canvas and an image</li>
+    <li>Subscribe to position stream, update image position</li>
+  </ul>
+  </div>
+  <div id="demo"><div id="arena"></div></div>
+  <div id="src"><pre class="prettyprint"/></div>
+</body>
+</html><html>
+
+
+
