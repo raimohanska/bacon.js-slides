@@ -1,7 +1,6 @@
 $(function() {
   function nonEmpty(xs) { return xs.length > 0 }
   function head(xs) { return xs[0] }
-  function latter(a, b) { return b }
 
   // direction :: Observable [String] 
   var direction = keyState(38, 'UP')

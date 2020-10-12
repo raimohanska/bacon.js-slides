@@ -3,7 +3,6 @@ $(function() {
 
   function head(array) { return array[0] }
   function id(x) { return x }
-  function latter(a, b) { return b }
 
   // direction, movements, position :: Observable Vector2D
   var direction = keyState(38, new Vector2D(0, -1))
